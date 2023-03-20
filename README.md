@@ -18,7 +18,7 @@ java -jar ./target/static-server.jar -h
 java -jar ./target/static-server.jar -h
 
 #在8080端口启动，使用UTF-8作为响应编码，匹配任意的/开头的地址，静态资源目录为static
-java -jar ./target/static-server.jar -p 8080 -e UTF-8 -m /* -d static
+java -jar ./target/static-server.jar -p 8080 -e UTF-8 -m / -d static
 ```
 
 参数

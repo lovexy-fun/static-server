@@ -63,7 +63,7 @@ public class Server {
 
     public Server setMatchedPath(String matchedPath) {
         if (matchedPath != null && !matchedPath.isEmpty()) {
-            this.matchedPath = matchedPath;
+            this.matchedPath = matchedPath + "*";
         }
         return this;
     }
