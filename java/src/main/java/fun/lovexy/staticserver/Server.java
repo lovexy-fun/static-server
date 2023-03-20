@@ -40,7 +40,7 @@ public class Server {
     }
 
     public Server setContentEncoding(String contentEncoding) {
-        if (contentEncoding != null && contentEncoding.isEmpty()) {
+        if (contentEncoding != null && !contentEncoding.isEmpty()) {
             this.contentEncoding = contentEncoding;
         }
         return this;
@@ -51,7 +51,7 @@ public class Server {
     }
 
     public Server setStaticDir(String staticDir) {
-        if (staticDir != null && staticDir.isEmpty()) {
+        if (staticDir != null && !staticDir.isEmpty()) {
             this.staticDir = staticDir;
         }
         return this;
@@ -62,7 +62,7 @@ public class Server {
     }
 
     public Server setMatchedPath(String matchedPath) {
-        if (matchedPath != null && matchedPath.isEmpty()) {
+        if (matchedPath != null && !matchedPath.isEmpty()) {
             this.matchedPath = matchedPath;
         }
         return this;

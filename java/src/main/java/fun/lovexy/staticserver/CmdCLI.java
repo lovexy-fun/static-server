@@ -43,12 +43,14 @@ public class CmdCLI {
     }
 
     public Integer getPort() {
-        try {
-            return ((Long) cli.getParsedOptionValue(PORT)).intValue();
-        } catch (ParseException e) {
-            HELP_FORMATTER.printHelp(" ", OPTIONS);
-            System.err.println(e.getMessage());
-            System.exit(0);
+        if (cli.hasOption(PORT)) {
+            try {
+                return ((Long) cli.getParsedOptionValue(PORT)).intValue();
+            } catch (ParseException e) {
+                HELP_FORMATTER.printHelp(" ", OPTIONS);
+                System.err.println(e.getMessage());
+                System.exit(0);
+            }
         }
         return null;
     }
