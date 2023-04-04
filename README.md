@@ -12,7 +12,7 @@ cd ./java
 mvn clean package
 
 #启动服务
-java -jar ./target/static-server.jar -h
+java -jar ./target/static-server.jar
 
 #查看参数
 java -jar ./target/static-server.jar -h
